@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info Card</title>
+</head>
+<body>
+    <h1>Personal Information</h1>
+    
+    <p id="name"></p>
+    <p id="email"></p>
+    <p id="phone"></p>
+    <p id="location"></p>
+    <p id="hobby"></p>
+    
+    <script>
+        let fullName = "Gavin Waibel";
+        let emailAddress = "mc_gwaibel27@mcjvs2.org";
+        let phoneNumber = "234-802-3489";
+        let city = "Litchfield";
+        let favoriteHobby = "Running";
+        
+        document.getElementById('name').textContent = `Name: ${fullName}`;
+        document.getElementById('email').textContent = `Email: ${emailAddress}`;
+        document.getElementById('phone').textContent = `Phone Number: ${phoneNumber}`;
+        document.getElementById('location').textContent = `Location: ${city}`;
+        document.getElementById('hobby').textContent = `Favorite Hobby: ${favoriteHobby}`;
+        
+    </script>
+</body>
+</html>

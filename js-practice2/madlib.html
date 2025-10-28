@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Lib Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #152c44;
+            text-align: center;
+        }
+        .story {
+            background-color: white;
+            color: #011808;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Mad Lib Story</h1>
+    <div class="story" id="storyOutput"></div>
+    
+    <script>
+        // CHANGE THESE variables to make them your own
+        const adjective = "spicy";
+        const noun = "hose";
+        const verb = "swam";
+        const place = "Trump Tower";
+        const animal = "moose";
+        const number = 67;
+        const color = "maroon";
+        const personName = "Jimbobjoejohnjohnson";
+        const item = "quarters";
+        
+        // Create your OWN NEW story using template literals.  Example: 
+        let story = `
+            <p>On a dark and stormy night, ${personName} went to ${place}.</p>
+            <p>A ${color} ${animal} was waiting at the gate.</p>
+            <p>I found a stash of ${item} in the fountain, the ${animal} exclaimed!</p>
+            <p>The ${animal} ${verb} into ${adjective} ${noun} and 
+            found ${number} more ${item}.</p>
+            <p>Once they reached the surface, ${adjective} ${animal} took over the world and destroyed ${personName} for treason!</p>
+        `;
+        
+        // Display the story
+        document.getElementById('storyOutput').innerHTML = story;
+        
+        // Also log to console
+        console.log("Story:", story);
+    </script>
+</body>
+</html>

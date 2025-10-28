@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story Builder</title>
+</head>
+<body>
+    <h1 id="sentence1"></h1>
+    <p id="sentence2"></p>
+    <p id="sentance3"></p>
+    
+    <script>
+
+        let character = "Greg";
+        let place = "classroom";
+        let item = "computer";
+        let action = "hacked";
+
+        let firstSentence = character + " decided to go to the " + place + ".";
+        document.getElementById('sentence1').textContent = firstSentence;
+        
+        // Use template literals with ${}
+        let secondSentence = `He ${action} a cheap and useless ${item}!`;
+        document.getElementById('sentence2').textContent = secondSentence;
+
+        let thirdSentance = `Then someone ${action} ${character}. How Sad.`;
+        document.getElementById('sentance3').textContent = thirdSentance;
+    </script>
+</body>
+</html>
